@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Prediction Result</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/predict">Predict Heart Disease</a>
+            <a href="/about">About</a>
+        </nav>
+    </header>
+
+    <h2>Your Prediction: {{ prediction_text }}</h2>
+
+    <footer>
+        <p>&copy; 2024 Heart Disease Prediction</p>
+    </footer>
+</body>
+</html>
